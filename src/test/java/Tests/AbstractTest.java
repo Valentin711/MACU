@@ -2,7 +2,7 @@ package Tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
 public abstract class AbstractTest {
@@ -14,6 +14,6 @@ public abstract class AbstractTest {
         if (driver==null){driver=new FirefoxDriver();}
         if (URL==null){driver.get(URL2);}
     }
-    @AfterClass(alwaysRun = true)
+    @AfterTest (alwaysRun = true)
     public void tearDown(){driver.close();}
 }
