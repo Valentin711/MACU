@@ -3,7 +3,7 @@
 <suite name="General Test" parallel="false">
     <test name="General report">
         <classes>
-            <class name="Tests.AbstractTest"/>
+            <class name="cucumber.cucumber.featurs.SignInTest"/>
         </classes>
     </test>
 </suite>
